@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Library Portal </title>
+    </head>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+        <body>
+            <h1>Add item to inventory:</h1>
+                <body>
+                <p/>
+                <form action="item_added.html" method="POST">
+                <table>
+                    <tr>
+                        <td>Branch ID:</td>
+                        <td><input type="text" name="branch_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Item ID:</td>
+                        <td><input type="text" name="item_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Acquired:</td>
+                        <td><input type="date" id="start" name="date_acquired"
+                        value="2022-12-10"
+                        min="2018-01-01" max="2022-12-31"></td>
+                    </tr>
+                    <tr>
+                        <td>Loan Period:</td>
+                        <td><input type="text" name="max_loan_period"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="Add"></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+</html>

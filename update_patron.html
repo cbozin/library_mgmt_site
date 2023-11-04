@@ -1,0 +1,40 @@
+<html>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+<body>
+<form action="patron_updated.html" method="POST">
+    <table>    
+            Update: <select name="facet" id="facet">
+                <option value="first_name" selected="selected">first Name</option>
+                <option value="last_name" selected="selected">Last Name</option>
+                <option value="notes" selected="selected">Notes</option>
+                <option value="email" selected="selected">Email</option>
+                <option value="phone_number" selected="selected">Phone Number</option>
+            </select>
+            <input type="text" name="feature"></td></tr>
+            <tr><td><input type="submit" value="Update" name="Update"></td></tr>
+        </table>
+</body>
+</html>

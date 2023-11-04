@@ -1,0 +1,47 @@
+<html>
+<body>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+<form action="search_results_items.html" method="POST">
+    <table>
+        <tr><td><h2>Search Catalog:</h2></td>
+            </tr>
+            <tr>
+                <td>     
+                Search By: <select name="facet" id="facet">
+                    <option value="name" selected="selected">Name</option>
+                    <option value="item_id" selected="selected">ID</option>
+                    <option value="author" selected="selected">Author</option>
+                </select>
+                </td>
+                <td><input type="text" name="phrase"></td></tr>
+            <tr>
+                <td>Branch ID:</td>
+                <td><input type="text" name="branch_id"></td>
+            </tr>
+            <tr><td><input type="submit" value="Search" name="Search"></td></tr>
+        </table>
+</body>
+</html>

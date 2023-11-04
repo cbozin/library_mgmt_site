@@ -1,0 +1,41 @@
+<html>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+<body> 
+<h1>View Patron Profile</h1>
+<form action="patron_profile_viewed.html" method="POST">
+   
+    <table>
+        <tr>
+            <td>Patron ID:</td>
+            <td><input type="text" name="patron_id"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="View"></td>
+        </tr>
+    </table>
+    
+</body>
+</html> 

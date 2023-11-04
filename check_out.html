@@ -1,0 +1,50 @@
+<html>
+<body>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+    <h2>Check Out Item</h2>
+<form action="check_out_done.html" method="POST">
+    <table>
+        <tr>
+            <td>Inventory ID:</td>
+            <td><input type="text" name="inventory_id"></td>
+        </tr>
+        <tr>
+            <td>Patron ID:</td>
+            <td><input type="text" name="patron_id"></td>
+        </tr>
+        <tr>
+            <td>Check Out Date:</td>
+            <td><input type="date" id="start" name="check_out_date"
+                value="2022-12-10"
+                min="2018-01-01" max="2022-12-31"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Check Out"></td>
+        </tr>
+    </table>
+    
+</body>
+</html> 

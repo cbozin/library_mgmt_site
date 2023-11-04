@@ -1,0 +1,41 @@
+<html>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+<body>
+<form action="search_results_patrons.html" method="POST">
+    <table>
+        <h2>Search Patrons:</h2>
+        <tr></tr><td>     
+            Search By: <select name="facet" id="facet">
+                <option value="first_name" selected="selected">First Name</option>
+                <option value="last_name" selected="selected">Last Name</option>
+                <option value="patron_id" selected="selected">ID</option>
+                <option value="email" selected="selected">Email</option>
+            </select>
+            <input type="text" name="phrase"></td></tr>
+            <tr><td><input type="submit" value="Search" name="Search"></td></tr>
+        </table>
+</body>
+</html>

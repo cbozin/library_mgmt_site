@@ -1,0 +1,59 @@
+<html>
+    <style>
+        body {
+        background-color: lightblue;
+        }
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: verdana;
+        }
+
+       td {
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+        input[type=submit]{
+        background-color: white;
+        color: black;
+        position: relative;
+        font-family: verdana;
+
+        }
+    </style>
+    <head>
+        <title> Library Portal </title>
+    </head>
+        <body>
+            <h2>Add patron:</h2>
+                <body>
+                <p/>
+                <form action="patron_added.html" method="POST">
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="first_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type="text" name="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Added:</td>
+                        <td><input type="date" id="start" name="date_signed_up"
+                        value="2022-12-10"
+                        min="2018-01-01" max="2022-12-31"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="Add"></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+</html>
